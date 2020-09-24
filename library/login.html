@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href ="styles/login.css" rel="stylesheet"/> 
+    <script>
+        function validate(){
+            username = document.loginform.name.value;
+            password = document.loginform.password.value;
+            if(username ==""||username.length<3){
+		alert("enter your name");
+		document.loginform.name.focus();
+      
+	}
+         else if (password ==""||(!password.match(/[A-Z]/)||password.length<6)){
+		alert("enter your password");
+		document.loginform.password.value="";
+		document.loginform.password.focus();
+    }
+    else{
+        alert("You are registered")
+		document.loginform.submit();
+    }
+        }
+    </script>
+</head>
+<body><center>
+    <h1>Login Here</h1>
+    <form action="books.html" name="loginform">
+    <table>
+        <tr><td>Name:</td><td><input type="text" name="name" id="username"> </td></tr>
+        <tr><td>Password:</td><td><input type="password" name="password" id="password"> </td></tr>
+        <tr><td><input type="button" value="login" onclick="validate()"></td></tr>
+        </table>
+    </form></center>
+</body>
+</html>

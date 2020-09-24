@@ -1,0 +1,14 @@
+body{
+    background-image: url("/image/img6.jpg");
+    height: 100vh;
+    background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+            font-size: 30px;
+            color: rgb(10, 8, 1);
+
+}
+h1{
+    font-size: 45px;
+    font-weight: 400;
+}
